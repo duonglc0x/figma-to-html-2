@@ -9,8 +9,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-:root{
-  --primary-color: #1ebfc1
+:root {
+  --primary-color: #1ebfc1;
 }
 a {
   text-decoration: none;
@@ -62,4 +62,184 @@ a {
 }
 .header .nav {
   margin-left: auto;
+}
+/* ################# hero ################# */
+.hero {
+  margin-top: 50px;
+}
+.hero .body {
+  display: flex;
+  gap: 71px;
+  height: 631px;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* căn giữa theo chiều dọc */
+  width: 458px;
+}
+.hero-left .text {
+  color: #767e7e;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+.hero-left h1 {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+  margin-bottom: 46px;
+}
+.hero-left .desc {
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+  width: 374px;
+  margin-bottom: 52px;
+}
+.hero-left .btn-list {
+  gap: 50px;
+  display: flex;
+}
+.hero-left .btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  background: var(--primary-color);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+}
+.hero-left .btn-list .play {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-left img {
+  width: 62px;
+  height: 62px;
+}
+.hero-right {
+  position: relative;
+  width: 641px;
+  height: 631px;
+}
+.hero-right > img {
+  background-color: #E0F7F6;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.hero-right .Schedules {
+  width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 46px;
+}
+.hero-right .Schedules .desc {
+  display: flex;
+  justify-content: center;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 16px 35px 16px 36px;
+}
+.hero-right .Schedules img {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.hero-right .course {
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+  width: 157px;
+  height: 75px;
+  position: absolute;
+  left: 25px;
+  top: 149px;
+  z-index: 2;
+}
+.hero-right .course img {
+  width: 36px;
+  height: 40px;
+}
+.hero-right .course .desc {
+  width: 55px;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.hero-right .course .book {
+  margin-top: 17px;
+  margin-left: 25px;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.hero-right .course .dote {
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 99px;
+  left: 4px;
+  top: 28px;
+  z-index: 3;
+}
+.hero-right .student {
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  left: 389px;
+}
+.hero-right .student .content {
+  margin-top: 17px;
+  margin-left: 35px;
+}
+.hero-right .student .desc {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.hero-right .student .avatar {
+  display: flex;
+}
+.hero-right .student .avatar img {
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+  object-fit: cover;
+  margin-left: -7px;
+}
+.hero-right .student .avatar img:first-child {
+  margin-left: 0px;
+}
+.hero-right .student .avatar .box {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-left: -7px;
 }
